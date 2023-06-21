@@ -12,7 +12,7 @@ import ImageOutline from 'vue-material-design-icons/ImageOutline.vue';
 import FileGifBox from 'vue-material-design-icons/FileGifBox.vue';
 import Emoticon from 'vue-material-design-icons/Emoticon.vue';
 import ArrowLeft from 'vue-material-design-icons/ArrowLeft.vue';
-import MenuItem from '@/Components/MenuItem.vue';
+import MenuItems from '@/Components/MenuItems.vue'
 
 </script>
 
@@ -24,7 +24,40 @@ import MenuItem from '@/Components/MenuItem.vue';
                     <Twitter fillColor="#FFFFFF" :size="37" />
                 </div>
 
-                <MenuItem iconString="Home" />
+                <MenuItems iconString="Home" />
+                <MenuItems iconString="Explore" />
+                <MenuItems iconString="Notifications" />
+                <MenuItems iconString="Message" />
+                <MenuItems iconString="Profile" />
+
+                <button
+                    class="
+                        lg:w-full
+                        mt-8
+                        ml-2
+                        text-white
+                        font-extrabold
+                        text-[22px]
+                        bg-[#1C9CEF]
+                        p-3
+                        px-3
+                        rounded-full
+                        cursor-pointer
+                    "
+                >
+                    <span class="lg:block hidden">Tweet</span>
+                    <span class="block lg:hidden"><Feather /></span>
+                </button>
+            </div>
+
+            <div class="lg:w-7/12 w-11/12 border-x border-gray-800 relative">
+                <div class="bg-black bg-opacity-50 backdrop-blur-md z-10 absolute w-full">
+                    <div class="border-gray-800 border-b w-full">
+                        <div class="w-full text-white text-[22px] font-extrabold -4">
+                            Home
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
